@@ -15,17 +15,28 @@ namespace Lesson_4._2
             Right
         }
         /// <summary>
+<<<<<<< HEAD
         /// Используется в методе выводы дерева на экран и поиска
         /// </summary>
         public class NodeInfo
         {
             public Node Node { get; set; }
+=======
+        /// Используется в методе выводы дерева на экран
+        /// </summary>
+        private class NodeInfo
+        {
+            public Node Node;
+>>>>>>> Lesson-4_branch
             public string Text;
             public int StartPos;
             public int Size { get { return Text.Length; } }
             public int EndPos { get { return StartPos + Size; } set { StartPos = value - Size; } }
             public NodeInfo Parent, Left, Right;
+<<<<<<< HEAD
             public int Depth { get; set; }
+=======
+>>>>>>> Lesson-4_branch
         }
 
         //Свойства дерева
@@ -64,6 +75,7 @@ namespace Lesson_4._2
         }
 
         /// <summary>
+<<<<<<< HEAD
         /// BFS поиск - поиск в ширину где начало поиска начинается с корня и проходит слева на право до самой правой крайней нижней точки
         /// </summary>
         /// <param name="node"></param>
@@ -165,6 +177,8 @@ namespace Lesson_4._2
         }
 
         /// <summary>
+=======
+>>>>>>> Lesson-4_branch
         /// Метод добавляет в дерево новый элемент в зависимости от значения
         /// </summary>
         /// <param name="value"></param>
